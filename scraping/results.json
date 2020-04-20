@@ -1,0 +1,464 @@
+[
+    {
+        "athletes": [
+            {
+                "country": "COL",
+                "distance": "15.17",
+                "games": "rio-2016",
+                "name": "Caterine IBARGUEN"
+            },
+            {
+                "country": "VEN",
+                "distance": "14.98",
+                "games": "rio-2016",
+                "name": "Yulimar ROJAS"
+            },
+            {
+                "country": "KAZ",
+                "distance": "14.74",
+                "games": "rio-2016",
+                "name": "Olga RYPAKOVA"
+            },
+            {
+                "country": "USA",
+                "distance": "14.71",
+                "games": "rio-2016",
+                "name": "Keturah ORJI"
+            },
+            {
+                "country": "ISR",
+                "distance": "14.68",
+                "games": "rio-2016",
+                "name": "Hanna KNYAZYEVA-MINENKO"
+            },
+            {
+                "country": "POR",
+                "distance": "14.65",
+                "games": "rio-2016",
+                "name": "Patricia MAMONA"
+            },
+            {
+                "country": "JAM",
+                "distance": "14.53",
+                "games": "rio-2016",
+                "name": "Kimberly WILLIAMS"
+            },
+            {
+                "country": "GRE",
+                "distance": "14.26",
+                "games": "rio-2016",
+                "name": "Paraskevi PAPAHRISTOU"
+            },
+            {
+                "country": "POR",
+                "distance": "14.12",
+                "games": "rio-2016",
+                "name": "Susana COSTA"
+            },
+            {
+                "country": "POL",
+                "distance": "14.07",
+                "games": "rio-2016",
+                "name": "Anna JAGACIAK"
+            },
+            {
+                "country": "GER",
+                "distance": "13.96",
+                "games": "rio-2016",
+                "name": "Kristin GIERISCH"
+            },
+            {
+                "country": "FIN",
+                "distance": "13.95",
+                "games": "rio-2016",
+                "name": "Kristiina MAKELA"
+            }
+        ],
+        "year": "rio-2016"
+    },
+    {
+        "athletes": [
+            {
+                "country": "KAZ",
+                "distance": "14.98",
+                "games": "london-2012",
+                "name": "Olga RYPAKOVA"
+            },
+            {
+                "country": "COL",
+                "distance": "14.80",
+                "games": "london-2012",
+                "name": "Caterine IBARGUEN"
+            },
+            {
+                "country": "UKR",
+                "distance": "14.79",
+                "games": "london-2012",
+                "name": "Olga SALADUKHA"
+            },
+            {
+                "country": "UKR",
+                "distance": "14.56",
+                "games": "london-2012",
+                "name": "Hanna KNYAZYEVA"
+            },
+            {
+                "country": "GBR",
+                "distance": "14.48",
+                "games": "london-2012",
+                "name": "Yamile ALDAMA"
+            },
+            {
+                "country": "JAM",
+                "distance": "14.48",
+                "games": "london-2012",
+                "name": "Kimberly WILLIAMS"
+            },
+            {
+                "country": "JAM",
+                "distance": "14.35",
+                "games": "london-2012",
+                "name": "Trecia SMITH"
+            },
+            {
+                "country": "CUB",
+                "distance": "14.12",
+                "games": "london-2012",
+                "name": "Yargelis SAVIGNE"
+            },
+            {
+                "country": "RUS",
+                "distance": "14.11",
+                "games": "london-2012",
+                "name": "Tatyana LEBEDEVA"
+            },
+            {
+                "country": "SLO",
+                "distance": "13.98",
+                "games": "london-2012",
+                "name": "Marija SESTAK"
+            },
+            {
+                "country": "SVK",
+                "distance": "11.92",
+                "games": "london-2012",
+                "name": "Dana VELDAKOVA"
+            },
+            {
+                "country": "RUS",
+                "distance": "DPG/1",
+                "games": "london-2012",
+                "name": "Viktoriya GUROVA"
+            }
+        ],
+        "year": "london-2012"
+    },
+    {
+        "athletes": [
+            {
+                "country": "CMR",
+                "distance": "15.39",
+                "games": "beijing-2008",
+                "name": "Francoise MBANGO ETONE"
+            },
+            {
+                "country": "KAZ",
+                "distance": "15.11",
+                "games": "beijing-2008",
+                "name": "Olga RYPAKOVA"
+            },
+            {
+                "country": "CUB",
+                "distance": "15.05",
+                "games": "beijing-2008",
+                "name": "Yargelis SAVIGNE"
+            },
+            {
+                "country": "SLO",
+                "distance": "15.03",
+                "games": "beijing-2008",
+                "name": "Marija SESTAK"
+            },
+            {
+                "country": "RUS",
+                "distance": "14.77",
+                "games": "beijing-2008",
+                "name": "Viktoriya GUROVA"
+            },
+            {
+                "country": "RUS",
+                "distance": "14.73",
+                "games": "beijing-2008",
+                "name": "Anna PYATYKH"
+            },
+            {
+                "country": "UKR",
+                "distance": "14.70",
+                "games": "beijing-2008",
+                "name": "Olga SALADUKHA"
+            },
+            {
+                "country": "EST",
+                "distance": "14.13",
+                "games": "beijing-2008",
+                "name": "Kaire LEIBAK"
+            },
+            {
+                "country": "JAM",
+                "distance": "14.12",
+                "games": "beijing-2008",
+                "name": "Trecia SMITH"
+            },
+            {
+                "country": "CHN",
+                "distance": "14.09",
+                "games": "beijing-2008",
+                "name": "Limei XIE"
+            },
+            {
+                "country": "GRE",
+                "distance": "DPG /",
+                "games": "beijing-2008",
+                "name": "Hrysopiyi DEVETZI"
+            },
+            {
+                "country": "RUS",
+                "distance": "DPG /",
+                "games": "beijing-2008",
+                "name": "Tatyana LEBEDEVA"
+            }
+        ],
+        "year": "beijing-2008"
+    },
+    {
+        "athletes": [
+            {
+                "country": "CMR",
+                "distance": "15.30",
+                "games": "athens-2004",
+                "name": "Francoise MBANGO ETONE"
+            },
+            {
+                "country": "GRE",
+                "distance": "15.25",
+                "games": "athens-2004",
+                "name": "Hrysopiyi DEVETZI"
+            },
+            {
+                "country": "RUS",
+                "distance": "15.14",
+                "games": "athens-2004",
+                "name": "Tatyana LEBEDEVA"
+            },
+            {
+                "country": "JAM",
+                "distance": "15.02",
+                "games": "athens-2004",
+                "name": "Trecia SMITH"
+            },
+            {
+                "country": "SUD",
+                "distance": "14.99",
+                "games": "athens-2004",
+                "name": "Yamile ALDAMA"
+            },
+            {
+                "country": "ALG",
+                "distance": "14.86",
+                "games": "athens-2004",
+                "name": "Baya RAHOULI"
+            },
+            {
+                "country": "ITA",
+                "distance": "14.85",
+                "games": "athens-2004",
+                "name": "Magdelin MARTINEZ"
+            },
+            {
+                "country": "RUS",
+                "distance": "14.79",
+                "games": "athens-2004",
+                "name": "Anna PYATYKH"
+            },
+            {
+                "country": "CUB",
+                "distance": "14.57",
+                "games": "athens-2004",
+                "name": "Yusmay BICET"
+            },
+            {
+                "country": "UKR",
+                "distance": "14.35",
+                "games": "athens-2004",
+                "name": "Olena HOVOROVA"
+            },
+            {
+                "country": "GRE",
+                "distance": "14.34",
+                "games": "athens-2004",
+                "name": "Olga VASDEKI"
+            },
+            {
+                "country": "CHN",
+                "distance": "14.33",
+                "games": "athens-2004",
+                "name": "Qiuyan HUANG"
+            }
+        ],
+        "year": "athens-2004"
+    },
+    {
+        "athletes": [
+            {
+                "country": "BUL",
+                "distance": "15.20",
+                "games": "sydney-2000",
+                "name": "Tereza MARINOVA"
+            },
+            {
+                "country": "RUS",
+                "distance": "15.00",
+                "games": "sydney-2000",
+                "name": "Tatyana LEBEDEVA"
+            },
+            {
+                "country": "UKR",
+                "distance": "14.96",
+                "games": "sydney-2000",
+                "name": "Olena HOVOROVA"
+            },
+            {
+                "country": "CUB",
+                "distance": "14.30",
+                "games": "sydney-2000",
+                "name": "Yamile ALDAMA"
+            },
+            {
+                "country": "ALG",
+                "distance": "14.17",
+                "games": "sydney-2000",
+                "name": "Baya RAHOULI"
+            },
+            {
+                "country": "ROU",
+                "distance": "14.17",
+                "games": "sydney-2000",
+                "name": "Cristina Elena NICOLAU"
+            },
+            {
+                "country": "GRE",
+                "distance": "14.15",
+                "games": "sydney-2000",
+                "name": "Olga VASDEKI"
+            },
+            {
+                "country": "RUS",
+                "distance": "13.97",
+                "games": "sydney-2000",
+                "name": "Oksana ROGOVA"
+            },
+            {
+                "country": "SLO",
+                "distance": "13.59",
+                "games": "sydney-2000",
+                "name": "Anja VALANT"
+            },
+            {
+                "country": "CMR",
+                "distance": "13.53",
+                "games": "sydney-2000",
+                "name": "Francoise MBANGO ETONE"
+            },
+            {
+                "country": "GBR",
+                "distance": "13.44",
+                "games": "sydney-2000",
+                "name": "Ashia HANSEN"
+            },
+            {
+                "country": "CZE",
+                "distance": "NM\r\n ",
+                "games": "sydney-2000",
+                "name": "Sarka KASPARKOVA"
+            }
+        ],
+        "year": "sydney-2000"
+    },
+    {
+        "athletes": [
+            {
+                "country": "UKR",
+                "distance": "15.33",
+                "games": "atlanta-1996",
+                "name": "Inessa KRAVETS"
+            },
+            {
+                "country": "RUS",
+                "distance": "14.98",
+                "games": "atlanta-1996",
+                "name": "Inna LASOVSKAYA"
+            },
+            {
+                "country": "CZE",
+                "distance": "14.98",
+                "games": "atlanta-1996",
+                "name": "Sarka KASPARKOVA"
+            },
+            {
+                "country": "GBR",
+                "distance": "14.49",
+                "games": "atlanta-1996",
+                "name": "Ashia HANSEN"
+            },
+            {
+                "country": "GRE",
+                "distance": "14.44",
+                "games": "atlanta-1996",
+                "name": "Olga VASDEKI"
+            },
+            {
+                "country": "CHN",
+                "distance": "14.30",
+                "games": "atlanta-1996",
+                "name": "Ruiping REN"
+            },
+            {
+                "country": "ROU",
+                "distance": "14.21",
+                "games": "atlanta-1996",
+                "name": "Rodica MATEESCU"
+            },
+            {
+                "country": "LAT",
+                "distance": "14.12",
+                "games": "atlanta-1996",
+                "name": "Jelena BLAZEVICA"
+            },
+            {
+                "country": "UKR",
+                "distance": "14.09",
+                "games": "atlanta-1996",
+                "name": "Olena HOVOROVA"
+            },
+            {
+                "country": "USA",
+                "distance": "14.02",
+                "games": "atlanta-1996",
+                "name": "Sheila HUDSON"
+            },
+            {
+                "country": "UKR",
+                "distance": "13.81",
+                "games": "atlanta-1996",
+                "name": "Olena KHLUSOVYCH"
+            },
+            {
+                "country": "BUL",
+                "distance": "14.92",
+                "games": "atlanta-1996",
+                "name": "Iva PRANDZHEVA"
+            }
+        ],
+        "year": "atlanta-1996"
+    }
+]
