@@ -4,74 +4,86 @@
             {
                 "country": "COL",
                 "distance": "15.17",
+                "first name": "Caterine",
                 "games": "rio-2016",
-                "name": "Caterine IBARGUEN"
+                "last name": "IBARGUEN"
             },
             {
                 "country": "VEN",
                 "distance": "14.98",
+                "first name": "Yulimar",
                 "games": "rio-2016",
-                "name": "Yulimar ROJAS"
+                "last name": "ROJAS"
             },
             {
                 "country": "KAZ",
                 "distance": "14.74",
+                "first name": "Olga",
                 "games": "rio-2016",
-                "name": "Olga RYPAKOVA"
+                "last name": "RYPAKOVA"
             },
             {
                 "country": "USA",
                 "distance": "14.71",
+                "first name": "Keturah",
                 "games": "rio-2016",
-                "name": "Keturah ORJI"
+                "last name": "ORJI"
             },
             {
                 "country": "ISR",
                 "distance": "14.68",
+                "first name": "Hanna",
                 "games": "rio-2016",
-                "name": "Hanna KNYAZYEVA-MINENKO"
+                "last name": "KNYAZYEVA-MINENKO"
             },
             {
                 "country": "POR",
                 "distance": "14.65",
+                "first name": "Patricia",
                 "games": "rio-2016",
-                "name": "Patricia MAMONA"
+                "last name": "MAMONA"
             },
             {
                 "country": "JAM",
                 "distance": "14.53",
+                "first name": "Kimberly",
                 "games": "rio-2016",
-                "name": "Kimberly WILLIAMS"
+                "last name": "WILLIAMS"
             },
             {
                 "country": "GRE",
                 "distance": "14.26",
+                "first name": "Paraskevi",
                 "games": "rio-2016",
-                "name": "Paraskevi PAPAHRISTOU"
+                "last name": "PAPAHRISTOU"
             },
             {
                 "country": "POR",
                 "distance": "14.12",
+                "first name": "Susana",
                 "games": "rio-2016",
-                "name": "Susana COSTA"
+                "last name": "COSTA"
             },
             {
                 "country": "POL",
                 "distance": "14.07",
+                "first name": "Anna",
                 "games": "rio-2016",
-                "name": "Anna JAGACIAK"
+                "last name": "JAGACIAK"
             },
             {
                 "country": "GER",
                 "distance": "13.96",
+                "first name": "Kristin",
                 "games": "rio-2016",
-                "name": "Kristin GIERISCH"
+                "last name": "GIERISCH"
             },
             {
                 "country": "FIN",
                 "distance": "13.95",
+                "first name": "Kristiina",
                 "games": "rio-2016",
-                "name": "Kristiina MAKELA"
+                "last name": "MAKELA"
             }
         ],
         "year": "rio-2016"
@@ -81,74 +93,86 @@
             {
                 "country": "KAZ",
                 "distance": "14.98",
+                "first name": "Olga",
                 "games": "london-2012",
-                "name": "Olga RYPAKOVA"
+                "last name": "RYPAKOVA"
             },
             {
                 "country": "COL",
                 "distance": "14.80",
+                "first name": "Caterine",
                 "games": "london-2012",
-                "name": "Caterine IBARGUEN"
+                "last name": "IBARGUEN"
             },
             {
                 "country": "UKR",
                 "distance": "14.79",
+                "first name": "Olga",
                 "games": "london-2012",
-                "name": "Olga SALADUKHA"
+                "last name": "SALADUKHA"
             },
             {
                 "country": "UKR",
                 "distance": "14.56",
+                "first name": "Hanna",
                 "games": "london-2012",
-                "name": "Hanna KNYAZYEVA"
+                "last name": "KNYAZYEVA"
             },
             {
                 "country": "GBR",
                 "distance": "14.48",
+                "first name": "Yamile",
                 "games": "london-2012",
-                "name": "Yamile ALDAMA"
+                "last name": "ALDAMA"
             },
             {
                 "country": "JAM",
                 "distance": "14.48",
+                "first name": "Kimberly",
                 "games": "london-2012",
-                "name": "Kimberly WILLIAMS"
+                "last name": "WILLIAMS"
             },
             {
                 "country": "JAM",
                 "distance": "14.35",
+                "first name": "Trecia",
                 "games": "london-2012",
-                "name": "Trecia SMITH"
+                "last name": "SMITH"
             },
             {
                 "country": "CUB",
                 "distance": "14.12",
+                "first name": "Yargelis",
                 "games": "london-2012",
-                "name": "Yargelis SAVIGNE"
+                "last name": "SAVIGNE"
             },
             {
                 "country": "RUS",
                 "distance": "14.11",
+                "first name": "Tatyana",
                 "games": "london-2012",
-                "name": "Tatyana LEBEDEVA"
+                "last name": "LEBEDEVA"
             },
             {
                 "country": "SLO",
                 "distance": "13.98",
+                "first name": "Marija",
                 "games": "london-2012",
-                "name": "Marija SESTAK"
+                "last name": "SESTAK"
             },
             {
                 "country": "SVK",
                 "distance": "11.92",
+                "first name": "Dana",
                 "games": "london-2012",
-                "name": "Dana VELDAKOVA"
+                "last name": "VELDAKOVA"
             },
             {
                 "country": "RUS",
                 "distance": "DPG/1",
+                "first name": "Viktoriya",
                 "games": "london-2012",
-                "name": "Viktoriya GUROVA"
+                "last name": "GUROVA"
             }
         ],
         "year": "london-2012"
@@ -158,74 +182,86 @@
             {
                 "country": "CMR",
                 "distance": "15.39",
+                "first name": "Francoise",
                 "games": "beijing-2008",
-                "name": "Francoise MBANGO ETONE"
+                "last name": "MBANGO ETONE"
             },
             {
                 "country": "KAZ",
                 "distance": "15.11",
+                "first name": "Olga",
                 "games": "beijing-2008",
-                "name": "Olga RYPAKOVA"
+                "last name": "RYPAKOVA"
             },
             {
                 "country": "CUB",
                 "distance": "15.05",
+                "first name": "Yargelis",
                 "games": "beijing-2008",
-                "name": "Yargelis SAVIGNE"
+                "last name": "SAVIGNE"
             },
             {
                 "country": "SLO",
                 "distance": "15.03",
+                "first name": "Marija",
                 "games": "beijing-2008",
-                "name": "Marija SESTAK"
+                "last name": "SESTAK"
             },
             {
                 "country": "RUS",
                 "distance": "14.77",
+                "first name": "Viktoriya",
                 "games": "beijing-2008",
-                "name": "Viktoriya GUROVA"
+                "last name": "GUROVA"
             },
             {
                 "country": "RUS",
                 "distance": "14.73",
+                "first name": "Anna",
                 "games": "beijing-2008",
-                "name": "Anna PYATYKH"
+                "last name": "PYATYKH"
             },
             {
                 "country": "UKR",
                 "distance": "14.70",
+                "first name": "Olga",
                 "games": "beijing-2008",
-                "name": "Olga SALADUKHA"
+                "last name": "SALADUKHA"
             },
             {
                 "country": "EST",
                 "distance": "14.13",
+                "first name": "Kaire",
                 "games": "beijing-2008",
-                "name": "Kaire LEIBAK"
+                "last name": "LEIBAK"
             },
             {
                 "country": "JAM",
                 "distance": "14.12",
+                "first name": "Trecia",
                 "games": "beijing-2008",
-                "name": "Trecia SMITH"
+                "last name": "SMITH"
             },
             {
                 "country": "CHN",
                 "distance": "14.09",
+                "first name": "Limei",
                 "games": "beijing-2008",
-                "name": "Limei XIE"
+                "last name": "XIE"
             },
             {
                 "country": "GRE",
                 "distance": "DPG /",
+                "first name": "Hrysopiyi",
                 "games": "beijing-2008",
-                "name": "Hrysopiyi DEVETZI"
+                "last name": "DEVETZI"
             },
             {
                 "country": "RUS",
                 "distance": "DPG /",
+                "first name": "Tatyana",
                 "games": "beijing-2008",
-                "name": "Tatyana LEBEDEVA"
+                "last name": "LEBEDEVA"
             }
         ],
         "year": "beijing-2008"
@@ -235,74 +271,86 @@
             {
                 "country": "CMR",
                 "distance": "15.30",
+                "first name": "Francoise",
                 "games": "athens-2004",
-                "name": "Francoise MBANGO ETONE"
+                "last name": "MBANGO ETONE"
             },
             {
                 "country": "GRE",
                 "distance": "15.25",
+                "first name": "Hrysopiyi",
                 "games": "athens-2004",
-                "name": "Hrysopiyi DEVETZI"
+                "last name": "DEVETZI"
             },
             {
                 "country": "RUS",
                 "distance": "15.14",
+                "first name": "Tatyana",
                 "games": "athens-2004",
-                "name": "Tatyana LEBEDEVA"
+                "last name": "LEBEDEVA"
             },
             {
                 "country": "JAM",
                 "distance": "15.02",
+                "first name": "Trecia",
                 "games": "athens-2004",
-                "name": "Trecia SMITH"
+                "last name": "SMITH"
             },
             {
                 "country": "SUD",
                 "distance": "14.99",
+                "first name": "Yamile",
                 "games": "athens-2004",
-                "name": "Yamile ALDAMA"
+                "last name": "ALDAMA"
             },
             {
                 "country": "ALG",
                 "distance": "14.86",
+                "first name": "Baya",
                 "games": "athens-2004",
-                "name": "Baya RAHOULI"
+                "last name": "RAHOULI"
             },
             {
                 "country": "ITA",
                 "distance": "14.85",
+                "first name": "Magdelin",
                 "games": "athens-2004",
-                "name": "Magdelin MARTINEZ"
+                "last name": "MARTINEZ"
             },
             {
                 "country": "RUS",
                 "distance": "14.79",
+                "first name": "Anna",
                 "games": "athens-2004",
-                "name": "Anna PYATYKH"
+                "last name": "PYATYKH"
             },
             {
                 "country": "CUB",
                 "distance": "14.57",
+                "first name": "Yusmay",
                 "games": "athens-2004",
-                "name": "Yusmay BICET"
+                "last name": "BICET"
             },
             {
                 "country": "UKR",
                 "distance": "14.35",
+                "first name": "Olena",
                 "games": "athens-2004",
-                "name": "Olena HOVOROVA"
+                "last name": "HOVOROVA"
             },
             {
                 "country": "GRE",
                 "distance": "14.34",
+                "first name": "Olga",
                 "games": "athens-2004",
-                "name": "Olga VASDEKI"
+                "last name": "VASDEKI"
             },
             {
                 "country": "CHN",
                 "distance": "14.33",
+                "first name": "Qiuyan",
                 "games": "athens-2004",
-                "name": "Qiuyan HUANG"
+                "last name": "HUANG"
             }
         ],
         "year": "athens-2004"
@@ -312,74 +360,86 @@
             {
                 "country": "BUL",
                 "distance": "15.20",
+                "first name": "Tereza",
                 "games": "sydney-2000",
-                "name": "Tereza MARINOVA"
+                "last name": "MARINOVA"
             },
             {
                 "country": "RUS",
                 "distance": "15.00",
+                "first name": "Tatyana",
                 "games": "sydney-2000",
-                "name": "Tatyana LEBEDEVA"
+                "last name": "LEBEDEVA"
             },
             {
                 "country": "UKR",
                 "distance": "14.96",
+                "first name": "Olena",
                 "games": "sydney-2000",
-                "name": "Olena HOVOROVA"
+                "last name": "HOVOROVA"
             },
             {
                 "country": "CUB",
                 "distance": "14.30",
+                "first name": "Yamile",
                 "games": "sydney-2000",
-                "name": "Yamile ALDAMA"
+                "last name": "ALDAMA"
             },
             {
                 "country": "ALG",
                 "distance": "14.17",
+                "first name": "Baya",
                 "games": "sydney-2000",
-                "name": "Baya RAHOULI"
+                "last name": "RAHOULI"
             },
             {
                 "country": "ROU",
                 "distance": "14.17",
+                "first name": "Cristina",
                 "games": "sydney-2000",
-                "name": "Cristina Elena NICOLAU"
+                "last name": "Elena NICOLAU"
             },
             {
                 "country": "GRE",
                 "distance": "14.15",
+                "first name": "Olga",
                 "games": "sydney-2000",
-                "name": "Olga VASDEKI"
+                "last name": "VASDEKI"
             },
             {
                 "country": "RUS",
                 "distance": "13.97",
+                "first name": "Oksana",
                 "games": "sydney-2000",
-                "name": "Oksana ROGOVA"
+                "last name": "ROGOVA"
             },
             {
                 "country": "SLO",
                 "distance": "13.59",
+                "first name": "Anja",
                 "games": "sydney-2000",
-                "name": "Anja VALANT"
+                "last name": "VALANT"
             },
             {
                 "country": "CMR",
                 "distance": "13.53",
+                "first name": "Francoise",
                 "games": "sydney-2000",
-                "name": "Francoise MBANGO ETONE"
+                "last name": "MBANGO ETONE"
             },
             {
                 "country": "GBR",
                 "distance": "13.44",
+                "first name": "Ashia",
                 "games": "sydney-2000",
-                "name": "Ashia HANSEN"
+                "last name": "HANSEN"
             },
             {
                 "country": "CZE",
                 "distance": "NM\r\n ",
+                "first name": "Sarka",
                 "games": "sydney-2000",
-                "name": "Sarka KASPARKOVA"
+                "last name": "KASPARKOVA"
             }
         ],
         "year": "sydney-2000"
@@ -389,74 +449,86 @@
             {
                 "country": "UKR",
                 "distance": "15.33",
+                "first name": "Inessa",
                 "games": "atlanta-1996",
-                "name": "Inessa KRAVETS"
+                "last name": "KRAVETS"
             },
             {
                 "country": "RUS",
                 "distance": "14.98",
+                "first name": "Inna",
                 "games": "atlanta-1996",
-                "name": "Inna LASOVSKAYA"
+                "last name": "LASOVSKAYA"
             },
             {
                 "country": "CZE",
                 "distance": "14.98",
+                "first name": "Sarka",
                 "games": "atlanta-1996",
-                "name": "Sarka KASPARKOVA"
+                "last name": "KASPARKOVA"
             },
             {
                 "country": "GBR",
                 "distance": "14.49",
+                "first name": "Ashia",
                 "games": "atlanta-1996",
-                "name": "Ashia HANSEN"
+                "last name": "HANSEN"
             },
             {
                 "country": "GRE",
                 "distance": "14.44",
+                "first name": "Olga",
                 "games": "atlanta-1996",
-                "name": "Olga VASDEKI"
+                "last name": "VASDEKI"
             },
             {
                 "country": "CHN",
                 "distance": "14.30",
+                "first name": "Ruiping",
                 "games": "atlanta-1996",
-                "name": "Ruiping REN"
+                "last name": "REN"
             },
             {
                 "country": "ROU",
                 "distance": "14.21",
+                "first name": "Rodica",
                 "games": "atlanta-1996",
-                "name": "Rodica MATEESCU"
+                "last name": "MATEESCU"
             },
             {
                 "country": "LAT",
                 "distance": "14.12",
+                "first name": "Jelena",
                 "games": "atlanta-1996",
-                "name": "Jelena BLAZEVICA"
+                "last name": "BLAZEVICA"
             },
             {
                 "country": "UKR",
                 "distance": "14.09",
+                "first name": "Olena",
                 "games": "atlanta-1996",
-                "name": "Olena HOVOROVA"
+                "last name": "HOVOROVA"
             },
             {
                 "country": "USA",
                 "distance": "14.02",
+                "first name": "Sheila",
                 "games": "atlanta-1996",
-                "name": "Sheila HUDSON"
+                "last name": "HUDSON"
             },
             {
                 "country": "UKR",
                 "distance": "13.81",
+                "first name": "Olena",
                 "games": "atlanta-1996",
-                "name": "Olena KHLUSOVYCH"
+                "last name": "KHLUSOVYCH"
             },
             {
                 "country": "BUL",
                 "distance": "14.92",
+                "first name": "Iva",
                 "games": "atlanta-1996",
-                "name": "Iva PRANDZHEVA"
+                "last name": "PRANDZHEVA"
             }
         ],
         "year": "atlanta-1996"
