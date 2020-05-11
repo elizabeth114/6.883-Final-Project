@@ -74,7 +74,7 @@ def do_the_stuff():
 
 	model.compile(loss='mae', optimizer='adam')
 
-	history = model.fit(train_X, train_y, epochs=1500, batch_size=36, validation_data=(test_X, test_y), verbose=2, shuffle=False)
+	history = model.fit(train_X, train_y, epochs=1000, batch_size=36, validation_data=(test_X, test_y), verbose=2, shuffle=False)
 	# plot history
 	# pyplot.plot(history.history['loss'], label='train')
 	# pyplot.plot(history.history['val_loss'], label='test')

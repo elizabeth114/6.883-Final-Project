@@ -6,7 +6,8 @@ import datetime
 from convert_data import do_the_stuff
 from time_series import load_athlete
 
-result_dict = {}
+result_dict = []
+index = 1
 with open('../scraping/results.json') as json_file:
     data = json.load(json_file)[0]
     for athlete in data["athletes"]:
@@ -14,5 +15,7 @@ with open('../scraping/results.json') as json_file:
         athlete_name = [athlete["first name"], athlete["last name"]]
         load_athlete(athlete_name, olympic_date)
         results = do_the_stuff()
-        result_dict[" ".join(athlete_name)] = results[0][0]
-    print(result_dict)
+        result_dict.append((index, " ".join(athlete_name), results[0][0]))
+        index += 1
+
+    print(sorted(result_dict, key = lambda element : element[2]))
