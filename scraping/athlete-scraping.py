@@ -4,6 +4,8 @@ import json
 import csv
 import sys
 
+#['Qiuyan HUANG', 'Cristina Elena NICOLAU']
+#No profiles on world athletics for girls listed above
 
 class Gsearch_python:
    def __init__(self,name_search):
@@ -16,8 +18,6 @@ class Gsearch_python:
          print("No Module named 'google' Found")
       for i in search(query=self.name,tld='co.in',lang='en',num=10,stop=10,pause=10):
          count += 1
-         print (count)
-         print(i + '\n')
          if "worldathletics.org/athletes" in i:
             return i
 
@@ -25,8 +25,6 @@ found_athletes = set()
 base_url = "http://api.scraperapi.com?api_key=da6856bde4ae33e54a9356a16aea2213&url="
 world_athletics = "world athletics"
 
-# gs = Gsearch_python("world athletics Hanna KNYAZYEVA-MINENKO")
-# gs.Gsearch()
 error_athletes = []
 with open('results.json') as json_file:
    data = json.load(json_file)
