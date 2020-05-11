@@ -15,4 +15,4 @@ with open('../scraping/results.json') as json_file:
         load_athlete(athlete_name, olympic_date)
         results = do_the_stuff()
         result_dict[" ".join(athlete_name)] = results[0][0]
-    print(results_dict)
+    print(result_dict)
