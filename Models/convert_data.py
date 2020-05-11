@@ -50,12 +50,12 @@ def do_the_stuff():
 	scaler = MinMaxScaler(feature_range=(0, 1))
 	scaled = scaler.fit_transform(values)
 	# frame as supervised learning
-	reframed = series_to_supervised(values, 15, 1)
+	reframed = series_to_supervised(values, 9, 1)
 	# drop columns we don't want to predict
 
 	# split into train and test sets
 	values = reframed.values
-	n_train_hours = len(values) - 1
+	n_train_hours = len(values) - 30
 	train = values[:n_train_hours, :]
 	test = values[n_train_hours:, :]
 	# split into input and outputs
@@ -71,10 +71,11 @@ def do_the_stuff():
 
 	model.add(Dense(1))
 	model.add(Dense(1))
+	model.add(Dense(1))
 
 	model.compile(loss='mae', optimizer='adam')
 
-	history = model.fit(train_X, train_y, epochs=1000, batch_size=36, validation_data=(test_X, test_y), verbose=2, shuffle=False)
+	history = model.fit(train_X, train_y, epochs=1500, batch_size = 50, validation_data=(test_X, test_y), verbose=2, shuffle=False)
 	# plot history
 	# pyplot.plot(history.history['loss'], label='train')
 	# pyplot.plot(history.history['val_loss'], label='test')
