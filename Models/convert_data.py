@@ -38,63 +38,61 @@ def series_to_supervised(data, n_in=1, n_out=1, dropnan=True):
 		agg.dropna(inplace=True)
 	return agg
 
-# load dataset
-dataset = read_csv('csv_dates.csv', header=0, index_col=0)
-values = dataset.values
-# integer encode direction
-encoder = LabelEncoder()
-# ensure all data is float
-values = values.astype('float32')
-# normalize features
-scaler = MinMaxScaler(feature_range=(0, 1))
-scaled = scaler.fit_transform(values)
-# frame as supervised learning
-reframed = series_to_supervised(values, 9, 1)
-print(reframed)
-# drop columns we don't want to predict
-print(reframed.head())
+def do_the_stuff():
+	# load dataset
+	dataset = read_csv('csv_dates.csv', header=0, index_col=0)
+	values = dataset.values
+	# integer encode direction
+	encoder = LabelEncoder()
+	# ensure all data is float
+	values = values.astype('float32')
+	# normalize features
+	scaler = MinMaxScaler(feature_range=(0, 1))
+	scaled = scaler.fit_transform(values)
+	# frame as supervised learning
+	reframed = series_to_supervised(values, 15, 1)
+	# drop columns we don't want to predict
 
-# split into train and test sets
-values = reframed.values
-n_train_hours = 120
-train = values[:n_train_hours, :]
-print(train)
-test = values[n_train_hours:, :]
-# split into input and outputs
-train_X, train_y = train[:, :-1], train[:, -1]
-test_X, test_y = test[:, :-1], test[:, -1]
-# reshape input to be 3D [samples, timesteps, features]
-train_X = train_X.reshape((train_X.shape[0], 1, train_X.shape[1]))
-test_X = test_X.reshape((test_X.shape[0], 1, test_X.shape[1]))
-print(train_X.shape, train_y.shape, test_X.shape, test_y.shape)
+	# split into train and test sets
+	values = reframed.values
+	n_train_hours = len(values) - 1
+	train = values[:n_train_hours, :]
+	test = values[n_train_hours:, :]
+	# split into input and outputs
+	train_X, train_y = train[:, :-1], train[:, -1]
+	test_X, test_y = test[:, :-1], test[:, -1]
+	# reshape input to be 3D [samples, timesteps, features]
+	train_X = train_X.reshape((train_X.shape[0], 1, train_X.shape[1]))
+	test_X = test_X.reshape((test_X.shape[0], 1, test_X.shape[1]))
+	print(train_X.shape, train_y.shape, test_X.shape, test_y.shape)
 
-model = Sequential()
-model.add(LSTM(50, input_shape=(train_X.shape[1], train_X.shape[2])))
+	model = Sequential()
+	model.add(LSTM(50, input_shape=(train_X.shape[1], train_X.shape[2])))
 
-model.add(Dense(1))
+	model.add(Dense(1))
+	model.add(Dense(1))
 
-print(model)
-model.compile(loss='mae', optimizer='adam')
+	model.compile(loss='mae', optimizer='adam')
 
-history = model.fit(train_X, train_y, epochs=1500, batch_size=72, validation_data=(test_X, test_y), verbose=2, shuffle=False)
-# plot history
-pyplot.plot(history.history['loss'], label='train')
-pyplot.plot(history.history['val_loss'], label='test')
-pyplot.legend()
-pyplot.show()
-print(test_X)
-yhat = model.predict(test_X)
-print(yhat)
-test_X = test_X.reshape((test_X.shape[0], test_X.shape[2]))
-# invert scaling for forecast
-inv_yhat = concatenate((yhat, test_X[:, 1:]), axis=1)
-inv_yhat = scaler.inverse_transform(inv_yhat)
-inv_yhat = inv_yhat[:,0]
-# invert scaling for actual
-test_y = test_y.reshape((len(test_y), 1))
-inv_y = concatenate((test_y, test_X[:, 1:]), axis=1)
-inv_y = scaler.inverse_transform(inv_y)
-inv_y = inv_y[:,0]
-# calculate RMSE
-rmse = sqrt(mean_squared_error(inv_y, inv_yhat))
-print('Test RMSE: %.3f' % rmse)
+	history = model.fit(train_X, train_y, epochs=1500, batch_size=36, validation_data=(test_X, test_y), verbose=2, shuffle=False)
+	# plot history
+	# pyplot.plot(history.history['loss'], label='train')
+	# pyplot.plot(history.history['val_loss'], label='test')
+	# pyplot.legend()
+	# pyplot.show()
+	yhat = model.predict(test_X)
+
+	test_X = test_X.reshape((test_X.shape[0], test_X.shape[2]))
+	# invert scaling for forecast
+	inv_yhat = concatenate((yhat, test_X[:, 1:]), axis=1)
+	inv_yhat = scaler.inverse_transform(inv_yhat)
+	inv_yhat = inv_yhat[:,0]
+	# invert scaling for actual
+	test_y = test_y.reshape((len(test_y), 1))
+	inv_y = concatenate((test_y, test_X[:, 1:]), axis=1)
+	inv_y = scaler.inverse_transform(inv_y)
+	inv_y = inv_y[:,0]
+	# calculate RMSE
+	rmse = sqrt(mean_squared_error(inv_y, inv_yhat))
+	print('Test RMSE: %.3f' % rmse)
+	return yhat
