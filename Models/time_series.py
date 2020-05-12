@@ -22,7 +22,7 @@ def load_athlete(athlete_name, olympic_date):
             data = json.load(json_file)
             for athlete in data:
                 if athlete["first name"].lower() == athlete_name[0].lower() and athlete["last name"].lower() == athlete_name[1].lower():
-                    fieldnames = ['date', 'distance', 'mos_since_oly']
+                    fieldnames = ['date', 'distance']#, 'mos_since_oly']
                     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                     writer.writeheader()
                     data = []
@@ -38,7 +38,7 @@ def load_athlete(athlete_name, olympic_date):
                             date = datetime.datetime(year_value, months[date[3:6].lower()], int(date[:2]))
                             mos_since_last_olympics = (year_value - last_olympics_year) * 12 + (month_value - 8)
                             if date <   olympic_date:
-                                data.append({'date': date, 'distance': float(result["result"]), 'mos_since_oly': mos_since_last_olympics})
+                                data.append({'date': date, 'distance': float(result["result"])})#, 'mos_since_oly': mos_since_last_olympics})
                     data = sorted(data, key = lambda dic: dic["date"])
                     writer.writerows(data)
                     print("loaded ", athlete["first name"], " ", athlete["last name"], "\'s data")

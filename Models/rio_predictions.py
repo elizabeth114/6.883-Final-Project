@@ -2,6 +2,7 @@ import convert_data
 import time_series
 import json
 import datetime
+import plot as myplot
 
 from convert_data import do_the_stuff
 from time_series import load_athlete
@@ -15,6 +16,7 @@ with open('../scraping/results.json') as json_file:
         athlete_name = [athlete["first name"], athlete["last name"]]
         load_athlete(athlete_name, olympic_date)
         results = do_the_stuff()
+        myplot.plot_original_and_prediction(results, athlete_name)
         athlete_data = {"name": athlete_name,
                         "actual place": index,
                         "predicted place": 0,
