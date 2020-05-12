@@ -35,6 +35,6 @@ for year in url_options:
 			break
 
 	games.append(game)
-f = open("results.json", "w")
+f = open("olympic_results.json", "w")
 f.write(json.dumps(games, indent=4, sort_keys=True))
 f.close()
