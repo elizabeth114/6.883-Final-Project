@@ -43,3 +43,21 @@ def load_athlete(athlete_name, olympic_date):
                     writer.writerows(data)
                     print("loaded ", athlete["first name"], " ", athlete["last name"], "\'s data")
                     break
+
+def load_athlete_only_years_before(athlete_name, olympic_date, previous_oly_date):
+    with open('../scraping/general_results.json') as json_file:
+        data = json.load(json_file)
+        for athlete in data:
+            if athlete["first name"].lower() == athlete_name[0].lower() and athlete["last name"].lower() == athlete_name[1].lower():
+                data = []
+                for year in athlete["results by year"]:
+                    for result in year["results"]:
+                        date = result["date"]
+                        year_value = int(year["year"])
+                        month_value = months[date[3:6].lower()]
+                        date = datetime.datetime(year_value, month_value, int(date[:2]))
+                        if date > previous_oly_date and date < olympic_date:
+                            data.append({'date': date, 'distance': float(result["result"])})
+                data = sorted(data, key = lambda dic: dic["date"])
+                data = [d['distance'] for d in data]
+                return data
