@@ -78,19 +78,7 @@ def do_the_stuff():
 
 	# split into train and test sets
 	values = reframed.values
-	# values = values.T
-	# values = values.reshape((values.shape[0], n_vars, int(values.shape[1]/n_vars))).transpose((2,0,1)) # edited by pat, turns into (samples, timesteps, features)
 
-	# split with hardcoded value or use train_test_split below
-	# n_train_hours = len(values) - 30
-	# train = values[:n_train_hours]
-	# test = values[n_train_hours:]
-
-	# split into input and outputs
-	# train_X, train_y = train[:, :-1], train[:, -1] # original
-	# test_X, test_y = test[:, :-1], test[:, -1]
-	# train_X, train_y = train[:,:-1,:], train[:,-1,0]
-	# test_X, test_y = test[:,:-1,:], test[:,-1,0]
 
 	# train_X, test_X, train_y, test_y = train_test_split(values[:,:-1,:], values[:,-1,0], test_size=0.33)
 	train_X, test_X, train_y, test_y = train_test_split(values[:,:-1], values[:,-1], test_size=0.33) # for expanding window
@@ -106,13 +94,13 @@ def do_the_stuff():
 	model = Sequential()
 	model.add(LSTM(64, input_shape=(train_X.shape[1], train_X.shape[2])))
 
-	model.add(Dense(1))
-	model.add(Dense(1))
+	model.add(Dense(16))
+	model.add(Dense(8))
 	model.add(Dense(1))
 
 	model.compile(loss='mae', optimizer='adam')
 
-	history = model.fit(train_X, train_y, epochs=500, batch_size=50, validation_data=(test_X, test_y), verbose=0, shuffle=False)
+	history = model.fit(train_X, train_y, epochs=1000, batch_size=50, validation_data=(test_X, test_y), verbose=0, shuffle=False)
 	# plot history
 	# pyplot.plot(history.history['loss'], label='train')
 	# pyplot.plot(history.history['val_loss'], label='test')
@@ -155,14 +143,14 @@ def do_the_stuff_one_net(x_data, y_data, rio_x):
 
 	model = Sequential()
 	model.add(LSTM(128, activation="relu"))
+	model.add(Dense(16))
+	model.add(Dense(8))
 	model.add(Dense(1))
-	# model.add(Dense(1))
-	# model.add(Dense(1))
-	model.compile(loss='mse', optimizer='adam')
+	model.compile(loss='mae', optimizer='adam')
 
 	print(train_X.shape, train_y.shape, test_X.shape, test_y.shape, rio_x.shape)
 
-	history = model.fit(train_X, train_y, epochs=500, batch_size=16, validation_data=(test_X, test_y), verbose=2)
+	history = model.fit(train_X, train_y, epochs=1000, batch_size=64, validation_data=(test_X, test_y), verbose=1)
 	# history = model.fit(train_X, train_y, epochs=500, batch_size=16, verbose=2)
 	yhat = model.predict(rio_x)
 

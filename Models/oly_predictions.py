@@ -20,7 +20,7 @@ oly_dates = {"2016": datetime.datetime(2016, 8, 14),
             "1996": datetime.datetime(1996, 7, 31),
             "1992": datetime.datetime(1992, 1, 1)} # added 1992 fake date
 
-with open('../scraping/results.json') as json_file:
+with open('../scraping/olympic_results.json') as json_file:
     x_data = []
     y_data = []
     test_x = []
@@ -35,7 +35,7 @@ with open('../scraping/results.json') as json_file:
             loaded_data = load_athlete_only_years_before(athlete_name, olympic_date, previous_oly_date)
             if loaded_data is None or len(loaded_data) == 0:
                 continue
-            try: 
+            try:
                 if oly["year"][-4:] == "2016":
                     # test_y.append(array(float(athlete["distance"])))
                     # test_x.append(array(loaded_data))
@@ -78,7 +78,7 @@ with open('../scraping/results.json') as json_file:
         person["predicted place"] = index
         index -= 1
     print(error)
-    
+
     f = open("rio_predictions_one_net.json", "w")
     f.write(json.dumps(result_list, indent=4, sort_keys=True))
     f.close()
