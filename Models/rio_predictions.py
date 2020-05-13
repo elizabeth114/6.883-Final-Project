@@ -4,8 +4,8 @@ import json
 import datetime
 import plot as myplot
 
-from convert_data import create_and_predict
-from time_series import load_athlete
+from convert_data import do_the_stuff, do_the_stuff_one_net
+from time_series import load_athlete, load_athlete_only_years_before
 
 result_list = []
 index = 1
@@ -15,8 +15,8 @@ with open('../scraping/results.json') as json_file:
         olympic_date = datetime.datetime(2016, 8, 14)
         athlete_name = [athlete["first name"], athlete["last name"]]
         load_athlete(athlete_name, olympic_date)
-        results = create_and_predict()
-        myplot.plot_original_and_prediction(results, athlete_name)
+        results = do_the_stuff()
+        # myplot.plot_original_and_prediction(results, athlete_name)
         athlete_data = {"name": athlete_name,
                         "actual place": index,
                         "predicted place": 0,
@@ -32,6 +32,6 @@ with open('../scraping/results.json') as json_file:
         index -= 1
 
     print(error)
-    f = open("rio_predictions.json", "w")
+    f = open("rio_predictions_only_years_before.json", "w")
     f.write(json.dumps(result_list, indent=4, sort_keys=True))
     f.close()

@@ -5,6 +5,7 @@ import datetime
 from math import sqrt
 import numpy as np
 from numpy import concatenate
+from numpy import array
 from matplotlib import pyplot
 from pandas import read_csv
 from pandas import DataFrame, Series
@@ -58,7 +59,7 @@ def series_to_supervised_expanding_window(data):
 
 	return expanding_window_df, n_vars
 
-def create_and_predict():
+def do_the_stuff():
 	# load dataset
 	dataset = read_csv('csv_dates.csv', header=0, index_col=0)
 	# print(dataset)
@@ -111,13 +112,13 @@ def create_and_predict():
 
 	model.compile(loss='mae', optimizer='adam')
 
-	history = model.fit(train_X, train_y, epochs=1000, batch_size = 50, validation_data=(test_X, test_y), verbose=1, shuffle=False)
+	history = model.fit(train_X, train_y, epochs=500, batch_size=50, validation_data=(test_X, test_y), verbose=0, shuffle=False)
 	# plot history
 	# pyplot.plot(history.history['loss'], label='train')
 	# pyplot.plot(history.history['val_loss'], label='test')
 	# pyplot.legend()
 	# pyplot.show()
-	# yhat = model.predict(test_X)
+	yhat = model.predict(test_X)
 	# print(yhat.shape)
 
 	test_X = test_X.reshape((test_X.shape[0], test_X.shape[1]))
@@ -137,4 +138,32 @@ def create_and_predict():
 	# rmse = sqrt(mean_squared_error(test_y, yhat))
 
 	print('Test RMSE: %.3f' % rmse)
+	return yhat
+
+def do_the_stuff_one_net(x_data, y_data, rio_x):
+	train_X, test_X, train_y, test_y = train_test_split(x_data, y_data, test_size=0.1)
+
+	train_X = array(train_X)
+	test_X = array(test_X)
+	train_y = array(train_y)
+	test_y = array(test_y)
+	rio_x = array(rio_x)
+
+	train_X = train_X.reshape((train_X.shape[0], train_X.shape[1], 1))
+	test_X = test_X.reshape((test_X.shape[0], test_X.shape[1], 1))
+	rio_x = rio_x.reshape((rio_x.shape[0], rio_x.shape[1], 1))
+
+	model = Sequential()
+	model.add(LSTM(128, activation="relu"))
+	model.add(Dense(1))
+	# model.add(Dense(1))
+	# model.add(Dense(1))
+	model.compile(loss='mse', optimizer='adam')
+
+	print(train_X.shape, train_y.shape, test_X.shape, test_y.shape, rio_x.shape)
+
+	history = model.fit(train_X, train_y, epochs=500, batch_size=16, validation_data=(test_X, test_y), verbose=2)
+	# history = model.fit(train_X, train_y, epochs=500, batch_size=16, verbose=2)
+	yhat = model.predict(rio_x)
+
 	return yhat
