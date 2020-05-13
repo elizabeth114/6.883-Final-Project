@@ -17,7 +17,7 @@ months = {"jan": 1,
             "dec": 12}
 
 def load_athlete(athlete_name, olympic_date):
-    with open('../scraping/general_results.json') as json_file:
+    with open('../scraping/athlete_results.json') as json_file:
         with open("csv_dates.csv", 'w', newline='') as csvfile:
             data = json.load(json_file)
             for athlete in data:
@@ -45,7 +45,7 @@ def load_athlete(athlete_name, olympic_date):
                     break
 
 def load_athlete_only_years_before(athlete_name, olympic_date, previous_oly_date):
-    with open('../scraping/general_results.json') as json_file:
+    with open('../scraping/athlete_results.json') as json_file:
         data = json.load(json_file)
         for athlete in data:
             if athlete["first name"].lower() == athlete_name[0].lower() and athlete["last name"].lower() == athlete_name[1].lower():

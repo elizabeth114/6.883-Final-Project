@@ -154,16 +154,15 @@ def do_the_stuff_one_net(x_data, y_data, rio_x):
 	rio_x = rio_x.reshape((rio_x.shape[0], rio_x.shape[1], 1))
 
 	model = Sequential()
-	model.add(LSTM(128, activation="relu"))
+	model.add(LSTM(64, activation="relu"))
 	model.add(Dense(1))
-	# model.add(Dense(1))
+	model.add(Dense(1))
 	# model.add(Dense(1))
 	model.compile(loss='mse', optimizer='adam')
 
 	print(train_X.shape, train_y.shape, test_X.shape, test_y.shape, rio_x.shape)
 
 	history = model.fit(train_X, train_y, epochs=500, batch_size=16, validation_data=(test_X, test_y), verbose=2)
-	# history = model.fit(train_X, train_y, epochs=500, batch_size=16, verbose=2)
 	yhat = model.predict(rio_x)
 
 	return yhat
