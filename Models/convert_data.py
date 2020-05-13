@@ -3,20 +3,14 @@ import csv
 import datetime
 
 from math import sqrt
-import numpy as np
-from numpy import concatenate
-from numpy import array
+from numpy import concatenate, array
 from matplotlib import pyplot
-from pandas import read_csv
-from pandas import DataFrame, Series
-from pandas import concat
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.preprocessing import LabelEncoder
+from pandas import read_csv, DataFrame, Series, concat
+from sklearn.preprocessing import MinMaxScaler, LabelEncoder
 from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
 from keras.models import Sequential
-from keras.layers import Dense
-from keras.layers import LSTM, GRU
+from keras.layers import Dense, LSTM, GRU, Dropout
 
 def series_to_supervised(data, n_in=1, n_out=1, dropnan=True):
 
@@ -143,6 +137,7 @@ def do_the_stuff_one_net(x_data, y_data, rio_x):
 
 	model = Sequential()
 	model.add(LSTM(128, activation="relu"))
+	model.add(Dropout(0.2))
 	model.add(Dense(16))
 	model.add(Dense(8))
 	model.add(Dense(1))
@@ -150,8 +145,7 @@ def do_the_stuff_one_net(x_data, y_data, rio_x):
 
 	print(train_X.shape, train_y.shape, test_X.shape, test_y.shape, rio_x.shape)
 
-	history = model.fit(train_X, train_y, epochs=1000, batch_size=64, validation_data=(test_X, test_y), verbose=1)
-	# history = model.fit(train_X, train_y, epochs=500, batch_size=16, verbose=2)
+	history = model.fit(train_X, train_y, epochs=1000, batch_size=64, validation_data=(test_X, test_y), verbose=2)
 	yhat = model.predict(rio_x)
 
 	return yhat

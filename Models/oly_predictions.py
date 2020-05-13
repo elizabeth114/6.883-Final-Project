@@ -50,18 +50,15 @@ def predict(year):
                         max_length = len(loaded_data)
                 except ValueError:
                     continue
-          # add padding with average distance at beginning of lists
+        # add padding with average distance at beginning of lists
         for i in range(len(x_data)):
             if len(x_data[i]) < max_length:
-                x_data[i] = concatenate([(max_length-len(x_data[i]))*[mean(x_data[i])],x_data[i]])
+                x_data[i] = concatenate([(max_length-len(x_data[i]))*[mean(x_data[i][:10])],x_data[i]])
         for i in range(len(test_x)):
             if len(test_x[i]) < max_length:
-                test_x[i] = concatenate([(max_length-len(test_x[i]))*[mean(test_x[i])],test_x[i]])
+                test_x[i] = concatenate([(max_length-len(test_x[i]))*[mean(test_x[i][:10])],test_x[i]])
         print("loaded all athletes")
         results = do_the_stuff_one_net(x_data, y_data, test_x)
-
-
-
 
         result_list = []
         rio_data = oly_data[0]["athletes"]
