@@ -154,7 +154,7 @@ def do_the_stuff_one_net(x_data, y_data, rio_x):
 	rio_x = rio_x.reshape((rio_x.shape[0], rio_x.shape[1], 1))
 
 	model = Sequential()
-	model.add(LSTM(64, activation="relu"))
+	model.add(LSTM(128, activation="relu"))
 	model.add(Dense(1))
 	model.add(Dense(1))
 	# model.add(Dense(1))
