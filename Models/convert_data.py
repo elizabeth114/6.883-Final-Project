@@ -56,9 +56,9 @@ def series_to_supervised_expanding_window(data):
 	expanding_window_df.dropna(inplace=True)
 	# print(expanding_window_df.head(5))
 
-	return expanding_window_df, n_vars 
+	return expanding_window_df, n_vars
 
-def do_the_stuff():
+def create_and_predict():
 	# load dataset
 	dataset = read_csv('csv_dates.csv', header=0, index_col=0)
 	# print(dataset)
@@ -135,6 +135,6 @@ def do_the_stuff():
 	# print(inv_y, inv_yhat)
 	rmse = sqrt(mean_squared_error(inv_y, inv_yhat))
 	# rmse = sqrt(mean_squared_error(test_y, yhat))
-	
+
 	print('Test RMSE: %.3f' % rmse)
 	return yhat
