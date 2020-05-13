@@ -45,6 +45,7 @@ def load_athlete(athlete_name, olympic_date):
                     break
 
 def load_athlete_only_years_before(athlete_name, olympic_date, previous_oly_date):
+    # final function used to only load results 4 years prior to upcoming olympics
     with open('../scraping/athlete_results.json') as json_file:
         data = json.load(json_file)
         for athlete in data:

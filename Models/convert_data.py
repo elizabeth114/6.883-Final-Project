@@ -123,6 +123,7 @@ def do_the_stuff():
 	return yhat
 
 def do_the_stuff_one_net(x_data, y_data, rio_x):
+	# final model
 	train_X, test_X, train_y, test_y = train_test_split(x_data, y_data, test_size=0.1)
 
 	train_X = array(train_X)
@@ -137,7 +138,7 @@ def do_the_stuff_one_net(x_data, y_data, rio_x):
 
 	model = Sequential()
 	model.add(LSTM(128, activation="relu"))
-	model.add(Dropout(0.2))
+	# model.add(Dropout(0.2))
 	model.add(Dense(16))
 	model.add(Dense(8))
 	model.add(Dense(1))
